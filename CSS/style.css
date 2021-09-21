@@ -1,0 +1,220 @@
+body {
+  background-image: url(../imagenes/background4.jpg);
+  background-repeat:round;
+  margin: 60px 200px 0px 200px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.logo {
+  width: 35%;
+  /* manera abreviada de propiedades box model*/
+  margin: 0 auto;
+}
+nav {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+.barradenavegacion {
+  display: inline-flex;
+  background-color: mediumpurple;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-color: black;
+  border-radius: 6px;
+}
+.lista {
+  padding: 10px 60px 10px 60px;
+}
+/* selector de pseudoclases*/
+.lista:hover {
+  background-color: purple;
+}
+/* selector descendiente*/
+.lista a {
+  text-decoration: none;
+  color: green;
+  font-weight: 800;
+}
+/* Parte 1 * Parallax */
+.parallax {
+  background-image: url(../imagenes/banner2.jpg);
+  /* Establece la altura mínima de los elementos del bloque */
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  border-style: ridge;
+  border-color: crimson;
+  border-radius: 6px;
+  border-width: 20px;
+}
+/* .cajaparallax {
+  margin: 0 auto;
+} */
+div.tituloparallax h2 {
+  font-size: 0.8cm; /*75px*/
+  color: green;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgb(34, 250, 5);
+  position: relative;
+  top: 500px;
+}
+.parrafoparallax {
+  background-color: blueviolet;
+  border: 2px solid black;
+  margin-left: 40%;
+  margin-top: 3%;
+  padding: 4px 8px 4px 8px;
+  position: relative;
+  top: 500px;
+}
+.parrafoparallax:hover {
+  background-color: blueviolet;
+  opacity: 0.7;
+}
+.parrafoparallax a {
+  font-size: 25px;
+  color: aqua;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin: auto 15px auto 15px;
+  text-decoration: none;
+}
+.parrafoparallax a:hover {
+  color: crimson;
+}
+/* sección 3 info */
+.informacion {/*BIO*/
+  display: inline-flex;
+  margin: 10px;
+}
+.informacion p{
+  color: black;
+  /* coloca el máximo de ancho a un elemento, además impide que el valor de width sea mas largo que el valor especificado*/
+  max-width:50% ;
+  margin: 0;
+  /* propiedad flexible */
+  align-self: center;
+  padding-left: 50px;
+  line-height: 23px;
+}
+.titulosquid {
+  font-size: 45px;
+  font-weight: 700;
+  color:rgb(3, 192, 3);
+  text-shadow: 4px 4px 2px rgb(34, 250, 5);
+}
+.splatfest {
+  font-size:18px ;
+  font-weight: 700;
+  color:rgb(3, 192, 3);
+  text-shadow: 4px 4px 2px rgb(34, 250, 5);
+}
+.informacion img { /*BIO imagen*/
+max-width: 40%;
+/* el navgador calcula la altura adecuada */
+height: auto;
+padding: 0px 50px 0px 50px;
+}
+.contentmusic {
+  /* espacio entre letras */
+  letter-spacing: 5px;
+  line-height: 2px;
+}
+.contentmusic h2 {
+  margin: 100px 0px;
+  font-size: 1.5cm;
+  color: blueviolet;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Cookie", cursive;
+}
+.container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.container .card{
+  width: 400px;
+  height: 350px;
+  border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+/* Desborda el contenido, él lo oculta */
+overflow: hidden;
+margin: 0px 10px;
+text-align: center;
+/* Hacer una transición en CSS */
+transition: all 0.25s;
+}
+.container .card:hover {
+transform: translateY(-15px);
+box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+.container .card img {
+  width: 250px;
+  height: 250px;
+}
+.container .card h4 {
+  font-weight: 600;
+  color: hotpink;
+  -webkit-text-stroke: 0.3px black;
+}
+.container .card p{
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: darkblue;
+  -webkit-text-stroke: 0.3px black;
+}
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color:maroon;
+  -webkit-text-stroke: 0.3px black;
+}
+/* Sección 4 - videos */
+.videos { /*Contenedor*/
+  margin: 20px 0px 0px 0px;
+}
+.imagenseccion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.imagenseccion img{
+  width: auto;
+  height: 200px;
+}
+.iframeprincipal {
+display: flex;
+justify-content: center;
+}
+.iframes {
+  display: flex;
+  justify-content: space-around;
+}
+.iframes iframe {
+  padding: 40px;
+  margin-top: 40px;
+}
+.final {
+  background-color:mediumpurple;
+  min-height: 100px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.final p{
+  text-align: center;
+  font-weight: 400;
+  color:green;
+}

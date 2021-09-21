@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squid sisters</title>
+    <link rel="shortcut icon" href="imagenes/icon.png" type="image/x-icon" />
+    <!--CSS interno
+<style>
+    body{
+        background-color: rgb(185, 91, 185);
+    }
+</style> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+
+  <body>
+    <!--CSS en linea-->
+    <!--<div style="background-color: plum;">-->
+    <header>
+      <div class="logo">
+        <img
+          width="320px"
+          height="250px"
+          src="imagenes/squid logo.png"
+          alt="imagen"
+        />
+      </div>
+
+      <nav>
+        <ul class="barradenavegacion">
+          <li class="lista"><a href="#bio"> BIO </a></li>
+          <li class="lista"><a href="#section1"> INFO </a></li>
+          <li class="lista"><a href="#section2"> MUSIC </a></li>
+          <li class="lista"><a href="#section3"> VIDEOS </a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Sección parallax -->
+    <section id="bio">
+      <article>
+        <div class="parallax">
+          <div class="tituloparallax">
+            <h2>Calamari inkantation</h2>
+            <!--Contenedor en linea-->
+            <span class="parrafoparallax">
+              <a
+                href="https://splatoon.fandom.com/es/wiki/Calamarci%C3%B1as#:~:text=Las%20Calamarci%C3%B1as%20(Squid%20Sisters%20en,de%20combate%20en%20la%20plaza."
+              >
+                Get now
+              </a>
+            </span>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="section1">
+      <article>
+        <div class="informacion">
+          <p>
+            <span class="titulosquid">¿who are squid sisters?</span>
+            <br />
+
+            The Squid Sisters are a pop idol duo in Inkopolis, consisting of
+            Callie and Marie. Together, they host Inkopolis News, announcing
+            events, updates, and the current stages in rotation. They also host
+            Splatfest events, with each Sister representing one of the two
+            teams. Despite their name, they are actually cousins, not sisters.
+            <br />
+            <br />
+            <br />
+            <span class="splatfest"> Splatfest </span>
+            <br />
+            The Squid Sisters also hosted Splatfest events, a multiplayer event
+            in which players of a region divided into opposing team, with Callie
+            and Marie each representing a different team. Callie's team was
+            always shown on the left side of the Splatfest artwork and Marie's
+            team on the right. For the duration of the event, their clothes and
+            tentacles temporarily changed color to match that of their team's
+            ink and they performed a live concert in Inkopolis atop trucks
+            outfitted with stage equipment.
+          </p>
+          <img src="imagenes/banner1.jpg" alt="Squid Sisters" />
+        </div>
+      </article>
+    </section>
+    <section id="section2" class="contentmusic">
+      <h2>MUSIC</h2>
+      <div class="container">
+        <div class="card">
+          <img src="imagenes/city of color.jpg" alt="City of color" onclick="Cityofcolor()" />
+          <h4>City of color</h4>
+          <p>splatfets music</p>
+          <a href="https://www.youtube.com/watch?v=01qByhAbg3U">Escuchar</a>
+        </div>
+        <div class="card">
+          <img src="imagenes/fresh start.jpg" alt="Fresh start" onclick="Freshstart()" />
+          <h4>Fresh Start</h4>
+          <p>ending theme</p>
+          <a href="https://www.youtube.com/watch?v=qC1w9_dqLjE">Escuchar</a>
+        </div>
+        <div class="card">
+          <img src="imagenes/tidal rush.jpg" alt="Tidal rush" onclick="TidalRush()" />
+          <h4>Tidal rush</h4>
+          <p>Final boss Theme</p>
+          <a href="https://www.youtube.com/watch?v=XRGk_lsr-vU">Escuchar</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <img src="imagenes/now or never.jpg" alt="Now or Never" onclick="NoworNever()" />
+          <h4>Now or Never</h4>
+          <p>splatfest music</p>
+          <a href="https://www.youtube.com/watch?v=C6XPExoLipY">Escuchar</a>
+        </div>
+        <div class="card">
+          <img src="imagenes/maritime memory.jpg" alt="Maritime memory" onclick="MaritimeMemory()" />
+          <h4>Maritime memory</h4>
+          <p>ending theme</p>
+          <a href="https://www.youtube.com/watch?v=pexceIzifio">Escuchar</a>
+        </div>
+        <div class="card">
+          <img
+            src="imagenes/calamari inkantation.jpg"
+            alt="Calamari inkantation" onclick="Calamaryinkantation()"
+          />
+          <h4>Calamari inkantation</h4>
+          <p>Splatoon main theme</p>
+          <a href="https://www.youtube.com/watch?v=bKRD3fA5qiU">Escuchar</a>
+        </div>
+      </div>
+    </section>
+    <section id="section3"> 
+      <div class="videos">
+        <div class="imagenseccion">
+          <img src="imagenes/logo_squid.png" alt="logo" />
+        </div>
+        <div class="iframeprincipal">
+          <!-- Permite colocar un objeto HTML en otro objeto HTML principal -->
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/oyAi0qScNnk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="iframes">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/mFpervvXRvA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SeYsDvHdaeE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="final">
+        <p>© 2021 Splatoon OST</p>
+      </div>
+    </footer>
+    <script src="JS/java.js"></script>
+  </body>
+</html>
